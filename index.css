@@ -32,7 +32,7 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-    padding: 0 8px;
+    padding: 0 1vw;
 }
 #blue{
     width: 20%;
@@ -56,11 +56,11 @@ body{
 #mail,#phone{
     color: white;
     text-decoration: none;
-    line-height: 20px;
+    line-height: 1.5vw;
     font-size: 1vw;
 }
 #blue p{
-    line-height: 25px;
+    line-height: 2vw;
     font-size: 1vw;
 }
 #mail:hover,#phone:hover{
@@ -80,7 +80,6 @@ body{
     background-color: rgba(255,255,255,0.5);
 }
 header{
-    margin-top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +87,7 @@ header{
 .nav{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5vw;
     position: absolute;
     top: 10%;
     height: 10%;
@@ -102,6 +101,7 @@ header{
     color: black;
     font-size: 1.2vw;
     padding: 5px;
+    padding: 0.4vw;
     position: relative;
 }
 .nav li ul{
@@ -118,7 +118,7 @@ header{
 .nav li ul li{
     line-height: 2vh;
     width: max-content;
-    margin: 20px;
+    margin: 1.4vw;
     position: relative;
     text-align: left;
     font-weight: 500;
@@ -127,7 +127,7 @@ header{
     color: #071b8b;
 }
 .nav li:hover .hover-color{
-    border-bottom: solid 5px #cf2c31;
+    border-bottom: solid 0.25em #cf2c31;
 }
 .nav li:hover > ul{
     visibility: visible;
@@ -170,7 +170,7 @@ h1 a:hover{
 /* IQAC Description */
 #Description{
     width: 90%;
-    border: solid 2px #cf2c31;
+    border: solid 0.2vw #cf2c31;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -216,7 +216,7 @@ h1 a:hover{
 #link-section-seperator{
     background-color: #071b8b;
     height: 0.1vh;
-    margin: 5px;
+    margin: 0.15vw;
 }
 .links-details{
     display: flex;
@@ -246,7 +246,7 @@ h1 a:hover{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 20px 20px 20px 0;
+    margin: 1.5vw 1.5vw 1.5vw 0;
 }
 .useful-links a{
     color: black;
@@ -269,7 +269,7 @@ h1 a:hover{
 }
 .get-in-touch h2{
     color: #071b8b;
-    margin-bottom: 20px;
+    margin-bottom: 1.5vw;
 }
 .get-in-touch a{
     color: black;
