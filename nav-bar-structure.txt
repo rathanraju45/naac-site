@@ -1,0 +1,30 @@
+1.IQAC
+    1.IQAC Home
+    2.IQAC Composition
+    3.Minutes of meetings
+    4.Events
+2.AQAR
+3.SSS
+4.NAAC
+    1.Cycle-1
+        1.SSR
+        2.Certificates
+    2.Cycle-2
+        1.IIQA Decleration
+        2.SSR Support Docs
+        3.DVV
+        4.SSR
+        5.NAAC Accrediation
+5.NIRF
+6.ISO
+7.Best Practices
+8.Distinctiveness
+9.UGC undertaking
+10.OBE(outcome based education)
+11.feedback
+    1.curriculum
+    2.Faculty self apprisal form
+    3.Student Profile & mentoring
+    4.Student feedback on facilities
+    5.Parent feedback on facilities
+12.Community & policies
