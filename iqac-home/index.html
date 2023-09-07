@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IQAC | DVR & Dr.HS MIC College of Technology</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 <body>
-
     <!-- Main college description -->
     <div id="col-desc">
-        <div id="logo"><img src="images/logo-mic.png" alt=""></div>
+        <div id="logo"><img src="../images/logo-mic.png" alt=""></div>
         <div id="red">
             <div class="col-details">
                 <p>Approved by AICTE | Permanently Affiliated to JNTUK, Kakinada | Accredited with NAAC 'A' Grade |
@@ -30,7 +29,7 @@
 
     <!-- Overlay and header images -->
     <div class="overlay"></div>
-    <img src="images/students banner.jpg" alt="" id="menu-img">
+    <img src="../images/students banner.jpg" alt="" id="menu-img">
 
     <!-- Header and navbar -->
     <header>
@@ -51,6 +50,8 @@
                 <ul>
                     <li><a href="#">IQAC Home</a></li>
                     <li><a href="#">IQAC Composition</a></li>
+                    <li><a href="#">Best Practices</a></li>
+                    <li><a href="#">Distinctiveness</a></li>
                     <li><a href="#">Minutes of Meetings</a></li>
                     <li><a href="#">Events</a></li>
                 </ul>
@@ -71,24 +72,24 @@
                   </svg>
                 </a>
                 <ul>
-                    <li id="cycle-1">
+                    <li id="cycle-1 anomaly">
                         <a href="#" id="sub-cyc1">Cycle-1
                             <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24" id="right-caret">
                                 <path d="M10 17l5-5-5-5v10z" fill="currentColor" />
                               </svg>
                         </a>
-                        <ul>
+                        <ul class="anomaly-sub">
                             <li><a href="#">SSR</a></li>
                             <li><a href="#">Certificates</a></li>
                         </ul>
                     </li>
-                    <li id="cycle-2">
+                    <li id="cycle-2 anomaly">
                         <a href="#" id="sub-cyc2">Cycle-2
                             <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24" id="right-caret">
                                 <path d="M10 17l5-5-5-5v10z" fill="currentColor" />
                               </svg>
                         </a>
-                        <ul>
+                        <ul class="anomaly-sub">
                             <li><a href="#">IIQA Decleration</a></li>
                             <li><a href="#">SSR Support Docs</a></li>
                             <li><a href="#">DVV</a></li>
@@ -100,10 +101,9 @@
             </li>
             <li><a href="#" class="hover-color">NIRF</a></li>
             <li><a href="#" class="hover-color">ISO</a></li>
-            <li><a href="#" class="hover-color">Best Practices</a></li>
-            <li><a href="#" class="hover-color">Distinctiveness</a></li>
+            <li><a href="#" class="hover-color">Academics</a></li>
             <li><a href="#" class="hover-color">UGC Undertaking</a></li>
-            <li><a href="#" class="hover-color">OBE(Outcome Based Education)</a></li>
+            <li><a href="#" class="hover-color">OBE<span id="obe">(Outcome Based Education)</span></a></li>
             <li><a href="#" class="hover-color">Feedback<svg id="down-caret"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -127,7 +127,14 @@
     </header>
 
     <!-- Navigation and current page -->
-    <h1><a href="https://mictech.edu.in">Home</a> / IQAC<br><span id="nav-span">IQAC Home</span></h1>
+    <h1>
+        <a href="https://mictech.edu.in">Home</a> / IQAC<br><span id="nav-span">IQAC Home</span>
+    </h1>
+    <div class="mobile-nav">
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </div>
 
     <!-- IQAC Description -->
     <div id="Description">
@@ -146,6 +153,7 @@
             <li>👉 Research sharing and networking with other institutions in India and abroad.</li>
         </ul>
         <h3>Functions</h3>
+        <p>Some of the functions expected of the IQAC are:</p>
         <ul>
             <li>👉 Development and application of quality benchmarks/parameters for the various academic and administrative activities of the institution.</li>
             <li>👉 Dissemination of information on the various quality parameters of higher education.</li>
@@ -155,7 +163,7 @@
             <li>👉 Preparation of the Annual Quality Assurance Report (AQAR) to be submitted to NAAC based on the quality parameters.</li>
         </ul>
         <h3>Benifits</h3>
-        <p>Some of the functions expected of the IQAC are:</p>
+        <p>IQAC will facilitate / contribute:</p>
         <ul>
             <li>👉 To a heightened level of clarity and focus in institutional functioning towards quality enhancement and facilitate internalization of the quality culture NAAC for Quality and Excellence in Higher Education.</li>
             <li>👉 To the enhancement and integration among the various activities of the institution and institutionalize many good practices.</li>
@@ -183,7 +191,7 @@
                     <p><a href="https://mictech.edu.in/student-login"><span id="tick-emoji">✓</span> Student login</a></p>
                 </div>
             </div>
-            <p>For all Foreign University Admissions (To send Transcripts) 
+            <p id="contact-p-responsive">For all Foreign University Admissions (To send Transcripts) 
                 mail ID used is: <a href="mailto:coe@mictech.ac.in">coe@mictech.ac.in</a>
             </p>
         </div>
@@ -202,5 +210,6 @@
             <a href=""><p id="top"><span id="top-nav">go to top</span>🔺</p></a>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

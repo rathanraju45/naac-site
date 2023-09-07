@@ -111,7 +111,7 @@ header{
     background-color: white;
     margin-top: 1vh;
     border-radius: 5%;
-    visibility: hidden;
+    display: none;
     opacity: 0;
     z-index: 1;
 }
@@ -130,7 +130,7 @@ header{
     border-bottom: solid 5px #cf2c31;
 }
 .nav li:hover > ul{
-    visibility: visible;
+    display: block;
     opacity: 1;
 }
 .nav li ul li ul{
@@ -139,6 +139,7 @@ header{
     transform: translateY(-20%);
 }
 #down-caret{
+    position: relative;
     float: right;
     margin-left: 0;
     width: 1.2vw;
@@ -167,47 +168,6 @@ h1 a:hover{
     font-size: 2vw;
 }
 
-/* IQAC Description */
-#Description{
-    width: 90%;
-    border: solid 2px #cf2c31;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#Description h2{
-    text-align: center;
-    color: #071b8b;
-    width: max-content;
-    font-size: 5vh;
-    margin: 3%;
-}
-#Description p{
-    color: #555555;
-    width: 95%;
-    font-size: 1.3vw;
-    line-height: 4vh;
-}
-#Description h3{
-    color: #cf2c31;
-    font-size: 1.7vw;
-    width: 95%;
-    line-height: 10vh;
-}
-#Description ul{
-    width: 95%;
-    align-items: left;
-}
-#Description li{
-    color: #555555;
-    list-style-type: none;
-    line-height: 4vh;
-    font-size: 1.2vw;
-}
-#pointer{
-    color: #cf2c31 !important;
-}
 /* Links and Details */
 .links-and-details{
     display: flex;
@@ -309,4 +269,216 @@ footer{
 }
 #top:hover > #top-nav{
     visibility: visible;
+}
+
+/* IQAC Description */
+#Description{
+    width: 90%;
+    border: solid 2px #cf2c31;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Description h2{
+    text-align: center;
+    color: #071b8b;
+    width: max-content;
+    font-size: 5vh;
+    margin: 3%;
+}
+#Description p{
+    color: #555555;
+    width: 95%;
+    font-size: 1.3vw;
+    line-height: 4vh;
+}
+#Description h3{
+    color: #cf2c31;
+    font-size: 1.7vw;
+    width: 95%;
+    line-height: 10vh;
+}
+#Description ul{
+    width: 95%;
+    align-items: left;
+}
+#Description li{
+    color: #555555;
+    list-style-type: none;
+    line-height: 4vh;
+    font-size: 1.2vw;
+}
+#pointer{
+    color: #cf2c31 !important;
+}
+
+
+/* media queris for responsive design */
+
+
+@media screen and (max-width: 600px) {
+    #col-desc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-nav{
+        display: flex;
+        display: inline-block;
+        position: absolute;
+        top: 13.5%;
+        right: 5%;
+        border: solid 1px black;
+        padding: 0 2%;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 5%;
+    }
+    .hamburger{
+        position: relative;
+        display:block;
+        width:35px;
+        cursor:pointer;
+        appearance:none;
+        background:none;
+        outline:none;
+        border:none;
+        float: right;
+    }
+    .hamburger .bar,.hamburger:after, .hamburger:before{
+        content:'';
+        display:block;
+        width:100%;
+        height:5px;
+        background-color: #fff;
+        margin:6px 0px;
+        transition:0.4s;
+    }
+     .hamburger.is-active:before{
+        transform:rotate(-45deg) translate(-8px,6px);
+    }
+    .hamburger.is-active:after{
+        transform:rotate(45deg) translate(-9px,-8px);
+    }
+    .hamburger.is-active .bar{
+        opacity:0;
+    }
+    .nav{
+        flex-direction: column;
+        background-color: rgba(255,255,255,0.99);
+        border: solid 1px rgba(0,0,0,0.5);
+        border-radius: 3%;
+        width: 70%;
+        height: max-content;
+        top: 23%;
+        visibility: hidden;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+    }
+    .nav.visibility {
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+    }
+    .visibility{
+        visibility: visible;
+        transition: 0.5s;
+    }
+    .nav li ul{
+        border: solid 1px rgba(0,0,0,0.5);
+    }
+    #down-caret{
+        width: 5vw;
+    }
+    .nav li a{
+        font-size: 100%;
+        line-height: 4vh;
+    }
+    /* .nav li ul li ul{
+        position: absolute;
+        left: 80%;
+        transform: translateY(-20%);
+    } */
+    .anomaly{
+        position: relative;
+        background-color: red;
+    }
+    .anomaly-sub{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #obe{
+        display: none;
+    }
+    .overlay{
+        display: none;
+    }
+    #logo{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+    #logo img{
+        width: 100%;
+        background-color: white;
+    }
+    #blue,#red{
+        display: none;
+    }
+    h1{
+        top: 14%;
+        font-size: 4.5vw;
+    }
+    #nav-span{
+        font-size: 3.5vw;
+    }
+   #Description h2{
+    width: 90vw;
+    font-size: 5.5vw;
+   }
+   #Description h3{
+    font-size: 5.2vw;
+   }
+   #Description p{
+    font-size: 3.9vw;
+    line-height: 3vh;
+   }
+   #Description li{
+    font-size: 3.5vw;
+   }
+   footer{
+    width: 100vw;
+   }
+   .links-and-details{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+   }
+   .get-in-touch h2{
+    font-size: 5vw;
+    width: 200%;
+   }
+   .links-details h2{
+    font-size: 5vw;
+   }
+   #contact-p-responsive{
+    font-size: 4vw;
+    margin-top: 0;
+    width: 250%;
+   }
+   .useful-links p a{
+    font-size: 4vw;
+   }
+   .get-in-touch{
+    margin: 20px;
+   }
+   .get-in-touch p{
+    line-height: 3vh;
+    font-size: 4vw;
+    width: 300%;
+   }
 }
