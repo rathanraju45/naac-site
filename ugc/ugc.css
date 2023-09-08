@@ -272,7 +272,7 @@ footer{
 }
 
 /* IQAC Description */
-#aqar{
+#ugc{
     width: 90%;
     border: solid 2px #cf2c31;
     margin: auto;
@@ -280,7 +280,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-#aqar h2{
+#ugc h2{
     text-align: center;
     color: #071b8b;
     width: max-content;
@@ -289,27 +289,27 @@ footer{
     margin-bottom: 2%;
     margin-top: 1%;
 }
-#aqar p{
+#ugc p{
     color: #555555;
     width: 95%;
     font-size: 1.3vw;
     line-height: 4vh;
 }
-#aqar ul{
+#ugc ul{
     width: 95%;
 }
-#aqar li{
+#ugc li{
     color: #555555;
     list-style-type: none;
     line-height: 4vh;
     font-size: 1.2vw;
 }
-#aqar li a{
+#ugc li a{
     color: #cf2c31;
     font-weight: 500;
     text-decoration: none;
 }
-#aqar li a:hover{
+#ugc li a:hover{
     color: #071b8b;
 }
 #pointer{
@@ -433,20 +433,20 @@ footer{
     #nav-span{
         font-size: 5vw;
     }
-   #aqar h2{
+   #ugc h2{
     width: 90vw;
     font-size: 5.5vw;
    }
-   #aqar ul{
+   #ugc ul{
     display: flex;
     flex-direction: column;
     align-items: center;
    }
-   #aqar p{
+   #ugc p{
     font-size: 3.9vw;
     line-height: 3vh;
    }
-   #aqar li{
+   #ugc li{
     font-size: 3.5vw;
    }
    footer{
