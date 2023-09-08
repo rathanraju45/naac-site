@@ -272,7 +272,7 @@ footer{
 }
 
 /* IQAC Description */
-#Description{
+#distinctiveness{
     width: 90%;
     border: solid 2px #cf2c31;
     margin: auto;
@@ -280,34 +280,38 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-#Description h2{
+#distinctiveness h2{
     text-align: center;
     color: #071b8b;
     width: max-content;
     font-size: 5vh;
     margin: 3%;
 }
-#Description p{
+#distinctiveness p{
     color: #555555;
     width: 95%;
     font-size: 1.3vw;
     line-height: 4vh;
 }
-#Description h3{
+#distinctiveness h3{
     color: #cf2c31;
     font-size: 1.7vw;
     width: 95%;
     line-height: 10vh;
 }
-#Description ul{
+#distinctiveness ul{
     width: 95%;
     align-items: left;
 }
-#Description li{
+#distinctiveness li{
     color: #555555;
     list-style-type: none;
     line-height: 4vh;
     font-size: 1.2vw;
+}
+#distinctiveness span{
+    color: #cf2c31;
+    font-weight: 600;
 }
 #pointer{
     color: #cf2c31 !important;
@@ -430,18 +434,18 @@ footer{
     #nav-span{
         font-size: 3.5vw;
     }
-   #Description h2{
+   #distinctiveness h2{
     width: 90vw;
     font-size: 5.5vw;
    }
-   #Description h3{
+   #distinctiveness h3{
     font-size: 5.2vw;
    }
-   #Description p{
+   #distinctiveness p{
     font-size: 3.9vw;
     line-height: 3vh;
    }
-   #Description li{
+   #distinctiveness li{
     font-size: 3.5vw;
    }
    footer{
