@@ -280,31 +280,75 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-.criterias{
+.criteria-selector{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    padding: 2% 0;
-    margin: 1% 0;
+    justify-content: space-evenly;
+    margin: 2%;
 }
-.criteria{
-    background-color: #071b8b;
+.criteria-selector > *{
     border: solid 1px black;
-    color: white;
-    width: 12%;
-    height: 5vh;
+    width: 13%;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5%;
-    margin: auto;
+    background-color: #071b8b;
+    color: white;
     border-radius: 5%;
-    font-size: 1.4vw;
 }
-.criteria:hover{
+.criteria-selector > *:hover{
     background-color: #cf2c31;
+    cursor: pointer;
+}
+.criteria-list{
+    width: 98%;
+    margin: 1%;
+}
+.criteria-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+.criteria1 > *{
+    margin: 2% 0;
+}
+.criteria-list p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 3vh;
+}
+.criteria-links > a{
+    text-decoration: none;
+    color: #cf2c31;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+#criteria-hr{
+    background-color: #071b8b;
+    width: 100%;
+    height: 0.1vh;
+    margin: 2% 0;
+}
+.criteria2,.criteria3,.criteria4,.criteria5,.criteria6,.criteria7{
+    display: none;
+}
+/* javascript classes for active criteria selections */
+.criteria-1{
+    background-color: #cf2c31;
+}
+.red{
+    background-color: #cf2c31;
+}
+.blue{
+    background-color: #071b8b;
+}
+.none{
+    display: none;
+}
+.visible{
+    display: block;
 }
 #ssr-docs h2{
     text-align: center;
@@ -312,16 +356,30 @@ footer{
     width: max-content;
     font-size: 5vh;
     margin: 3%;
+    margin-bottom: 0;
 }
-.criteria-list{
-    border: solid 1px black;
-    display: flex;
-}
-.criteria-list p{
+/* #ssr-docs p{
     color: #555555;
     width: 95%;
     font-size: 1.3vw;
     line-height: 4vh;
+} */
+#ssr-docs ul{
+    width: 95%;
+}
+#ssr-docs li{
+    color: #555555;
+    list-style-type: none;
+    line-height: 4vh;
+    font-size: 1.2vw;
+}
+#ssr-docs li a{
+    color: #cf2c31;
+    font-weight: 500;
+    text-decoration: none;
+}
+#ssr-docs li a:hover{
+    color: #071b8b;
 }
 #pointer{
     color: #cf2c31 !important;
@@ -442,14 +500,16 @@ footer{
         font-size: 4.5vw;
     }
     #nav-span{
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
    #ssr-docs h2{
     width: 90vw;
     font-size: 5.5vw;
    }
-   #ssr-docs h3{
-    font-size: 5.2vw;
+   #ssr-docs ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    }
    #ssr-docs p{
     font-size: 3.9vw;

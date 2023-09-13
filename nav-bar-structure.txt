@@ -1,20 +1,20 @@
 1.IQAC
-    1.IQAC Home
-    2.IQAC Composition
+    1.IQAC Home (c)
+    2.IQAC Composition(c)
     3.Minutes of meetings
     4.Events
-2.AQAR
-3.SSS
+2.AQAR (c)
+3.SSS (c)
 4.NAAC
     1.Cycle-1
         1.SSR
-        2.Certificates
+        2.Certificates (c)
     2.Cycle-2
         1.IIQA Decleration
         2.SSR Support Docs
         3.DVV
         4.SSR
-        5.NAAC Accrediation
+        5.NAAC Accrediation (c)
 5.NIRF
 6.ISO
 7.Best Practices
