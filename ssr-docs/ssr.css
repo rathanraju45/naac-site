@@ -334,6 +334,9 @@ footer{
 .criteria2,.criteria3,.criteria4,.criteria5,.criteria6,.criteria7{
     display: none;
 }
+.criteria-links > a:hover{
+    color: #071b8b;
+}
 /* javascript classes for active criteria selections */
 .criteria-1{
     background-color: #cf2c31;
