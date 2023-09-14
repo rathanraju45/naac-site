@@ -361,12 +361,9 @@ footer{
     margin: 3%;
     margin-bottom: 0;
 }
-/* #ssr-docs p{
-    color: #555555;
-    width: 95%;
-    font-size: 1.3vw;
-    line-height: 4vh;
-} */
+select{
+    display: none;
+}
 #ssr-docs ul{
     width: 95%;
 }
@@ -520,6 +517,22 @@ footer{
    }
    #ssr-docs li{
     font-size: 3.5vw;
+   }
+   .criteria-selector{
+    display: none;
+   }
+   select{
+    margin: 5%;
+    width: 50%;
+    height: 3.5vh;
+    color: #cf2c31;
+    font-size: larger;
+   }
+   .criteria-links > a{
+    font-size: 3vw;
+   }
+   .criteria-list p{
+    font-size: 3.5vw !important;
    }
    footer{
     width: 100vw;

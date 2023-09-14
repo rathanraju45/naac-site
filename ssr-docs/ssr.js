@@ -26,3 +26,8 @@ function criteriaClicked(criteriaNumber){
         temp_element.style.display='block';
     }
 }
+var selectElement = document.getElementById('criteria-select');
+selectElement.addEventListener('change', function() {
+    const selectedValue = selectElement.value;
+    criteriaClicked(selectedValue);
+});
