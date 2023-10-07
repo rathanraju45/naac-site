@@ -160,34 +160,670 @@
     <div id="depdetails">
         <div class="department-list">
             <ul>
-                <li class="active">BED</li>
-                <li>CSE</li>
-                <li>CIVIL</li>
-                <li>ECE</li>
-                <li>EEE</li>
-                <li>IT</li>
-                <li>MECH</li>
-                <li>DMS</li>
-                <li>DCA</li>
+                <li class="active" id="BED" onclick="toggleMain('BED')">BED</li>
+                <li id="CSE" onclick="toggleMain('CSE')">CSE</li>
+                <li id="CIVIL" onclick="toggleMain('CIVIL')">CIVIL</li>
+                <li id="ECE" onclick="toggleMain('ECE')">ECE</li>
+                <li id="EEE" onclick="toggleMain('EEE')">EEE</li>
+                <li id="IT" onclick="toggleMain('IT')">IT</li>
+                <li id="MECH" onclick="toggleMain('MECH')">MECH</li>
+                <li id="DMS" onclick="toggleMain('DMS')">DMS</li>
+                <li id="DCA" onclick="toggleMain('DCA')">DCA</li>
             </ul>
         </div>
 
-        <div class="bed">
+        <div class="bed dep-isactive" id="bed">
             <ul>
-                <li class="dep-active">About Department</li>
-                <li>Vision & Mission</li>
-                <li>Laboratories</li>
+                <li id="about" class="dep-active" onclick="toggleDepSub('about')">About Department</li>
+                <li id="vsnmsn" onclick="toggleDepSub('vsnmsn')">Vision & Mission</li>
+                <li id="labs" onclick="toggleDepSub('labs')">Laboratories</li>
             </ul>
-            <h2>Department Of Basic Engineering<br>
-                … We Provide The RIGHT Foundation</h2>
-            <p>Engineering and science are, by their very nature, humanistic and socially derived enterprises. The Department of Basic Engineering plays an impact-creating role in an institute where the ethos of science and technology emerge. Hence a complete science and technology education must include subjects that help unite application of scientific principles with human, moral and social understanding. The subjects taught by this department are meant to sensitize students to the broader social, cultural, economic, ethical and humane issues involved in social change.
-                <br><br>
-                The Department of Basic Engineering was established in the year 2002. It provides a launch pad for the engineering study by teaching students the foundation courses in various subjects of science and humanities. The department also aims to provide knowledge in the vicinities of Mathematics, Physics, Chemistry, and Humanities to the students of engineering to set a strong foundation for respective core Engineering disciplines.
-                <br><br>
-                The faculty members of the department are fully slotted into research activities under various sponsored projects in collaboration with premier institutes and have been publishing research papers in journals of National and International repute.
-                <br>
-                The department has major core laboratories like Engineering Physics, Engineering Chemistry, and Computer-Aided Multimedia English Language that are fully equipped and play an indispensable role in students’ career.</p>
+            <div id="about-dep" class="active-sub">
+                <h2>Department Of Basic Engineering<br>
+                    … We Provide The RIGHT Foundation</h2>
+                <p>Engineering and science are, by their very nature, humanistic and socially derived enterprises. The Department of Basic Engineering plays an impact-creating role in an institute where the ethos of science and technology emerge. Hence a complete science and technology education must include subjects that help unite application of scientific principles with human, moral and social understanding. The subjects taught by this department are meant to sensitize students to the broader social, cultural, economic, ethical and humane issues involved in social change.
+                    <br><br>
+                    The Department of Basic Engineering was established in the year 2002. It provides a launch pad for the engineering study by teaching students the foundation courses in various subjects of science and humanities. The department also aims to provide knowledge in the vicinities of Mathematics, Physics, Chemistry, and Humanities to the students of engineering to set a strong foundation for respective core Engineering disciplines.
+                    <br><br>
+                    The faculty members of the department are fully slotted into research activities under various sponsored projects in collaboration with premier institutes and have been publishing research papers in journals of National and International repute.
+                    <br>
+                    The department has major core laboratories like Engineering Physics, Engineering Chemistry, and Computer-Aided Multimedia English Language that are fully equipped and play an indispensable role in students’ career.
+                </p>
+            </div>
+            <div id="vision-mission">
+                <h2>Vision & Mission</h2>
+                <div class="vision-mission-sub">
+                    <h3>Institute vision</h3>
+                    <p>To nurture excellence in the field of Engineering by imparting quality technical education, inculcating core values with skills, knowledge and behavior to the learners, promoting research and technical services with global competence to the societal requirements.</p>
+                    <h3>Institute Mission in pursuance of its vision</h3>
+                    <p>To provide state of the art infrastructure and instruction preparing the students professionally deft and intellectually adept.
+                        To provide the qualified and experienced teaching faculty to mould the learners to compete in contemporary technical world.
+                        To provide socio-ethical exposure and holistic attitude in preparing responsible and informed citizens to build the nation.
+                        To provide international standards in conducting research, offering technical services by cutting edge technologies to meet the current and future challenges of technological development.</p>
+                </div>
+            </div>
+            <div id="laboratories">
+                <h2>Laboratories</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name of the Laboratory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>C Programming Lab</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Python Lab</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Data Structures Lab</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>IT Workshop Lab</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Chemistry Lab</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Physics Lab</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Engineering Drawing</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Engineering Workshop</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <div class="cse dep-isactive" id="cse">
+            <ul>
+                <li id="about1" class="dep-active" onclick="toggleDepSub1('about1')">About Department</li>
+                <li id="vsnmsn1" onclick="toggleDepSub1('vsnmsn1')">Vision & Mission</li>
+                <li id="labs1" onclick="toggleDepSub1('labs1')">Laboratories</li>
+                <li id="club1" onclick="toggleDepSub1('club1')">Dept. Club</li>
+            </ul>
+            <div id="about-dep1" class="active-sub">
+                <h2>Department Of Computer Science And Engineering<br>
+                    … We CREATE A New World</h2>
+                <p>
+                    Computer Science and Engineering is a branch which imparts innovation and problem-solving skills through computational techniques and technologies. The most essential aspect of Computer Science is the skill of problem solving, an essential skill for life. Students study the design, development and analysis of software and hardware that could be used to solve problems in a variety of business, scientific and social contexts.
+                    <br><br>
+    The Department of Computer Science and Engineering was established in the year 2002 with a total intake of 60 in B. Tech Computer Science and Engineering (CSE). The intake was increased to 120 in the year 2003 and subsequently to 180 in the year 2013. The department provides post graduate program, M. Tech Computer Science and Engineering (CSE) with an intake of 18. The department is offering a Diploma course in Computer Engineering with an intake of 60 from the year 2021. B. Tech., in Artificial Intelligence & Data Science (AI & DS) and B. Tech., in Artificial Intelligence & Machine Learning (AI & ML) were duly approved by the AICTE to be run from the year 2021.
+                    <br><br>
+    The department is equipped with highly qualified and dedicated faculty members with minimum M. Tech qualification in Computer Science and Engineering to impart technical and research-based quality education and to develop innovative skills among the students and to enrich the academic activities through continual improvement in the teaching and learning processes. The faculty of the department has more than 100 research papers published every year (Scopus Indexed, Sci-Indexed, Peer Reviewed Journals with high impact factor) and they participate in various conferences/FDPs/Seminars/STTPs and Workshops.
+                    <br><br>
+    The department has an MoU with EICT-IIT Kanpur to organise FDPs on the cutting-edge technologies. Six international conferences/FDPs/STTPs are organised by the department faculty. Many of our faculty were key contributors to curriculum development and enrichment. The faculty of the department is part of five in-house projects (MIC Fee Payment portal, Students Performance analysis, Examination Cell Automation, Organization Website and Green Book Automation) and one external project (Website for Conference – YUVA FOGSI SOUTH ZONE – 2018) as part of research and development cell.
+                    <br><br>
+    The Department of Computer Science and Engineering has created an intensive teaching and learning experience through industry driven Curriculum.
+                    <br><br>
+    During the last two decades, most of the students are placed in top notch companies like IBM, TCS, Tech Mahindra, Infosys, Wipro, HCL, Byjus, PwC, Steria(India) Limited, Maple Labs, Infer India Pvt., Ltd., Accenture, Yash Technologies, Mind Tree etc with a salary range from 1.5LPA to 6 LPA. The alumni of the department have reached great heights in life over the years.
+                    <br><br>
+    The department was accredited by the National Board of Accreditation (NBA) for a period of 3 years for UG in 2016. It was reaccredited in 2019.
+                </p>
+            </div>
+            <div id="vision-mission1">
+                <h2>vision & mission</h2>
+                <div class="vision-mission-sub">
+                    <h3>Vision of the Department:</h3>
+                    <p>
+                        The vision of the department is to produce internationally competent professionals with sound technical knowledge, research skills and values to address current and future challenges of the industry, contributing to the transformation of the society.
+                    </p>
+                    <h3>The Mission of the Department is to:</h3>
+                    <p class="line-height">
+                        👉 Impart quality education in computer science and engineering through innovative teaching and learning methodologies
+                        <br>
+                        👉 Conduct industry ready skill development programs to bridge the gap between academia and industry to produce competitive software technocrats.
+                        <br>
+                        👉 Promote research through state-of-the-art facilities and interaction with the industry.
+                        <br>
+                        👉 Inculcate values in the students to make them socially committed professionals
+                        <br>
+                    </p>
+                    <h3>Program Educational Objectives (PEOs):</h3>
+                    <p class="line-height">
+                        👉 To produce proficient and competent Computer Science & Engineering graduates with a strong foundation in Science and Engineering and Technology to be successful in their professional careers.
+                        <br>
+                        👉  To make graduates capable of acquiring technical knowledge in core areas and use modern tools to solve real world problems.
+                        <br>
+                        👉 To inculcate necessary managerial and soft skills that help develop entrepreneurship and leadership qualities so as to produce competent professionals with ethical values.
+                        <br>
+                        👉 To make graduates Innovative thinkers and life-long self-learners.
+                        <br>
+                    </p>
+                    <h3>PROGRAM OUTCOMES (POs)</h3>
+                    <p class="line-height">
+                        👉 <span class="bold-head">Engineering knowledge:</span> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering
+                        <br>
+                        👉<span class="bold-head">Problem analysis:</span> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering
+                        <br>
+                        👉<span class="bold-head"> Design/development of solutions: </span> Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.
+                        <br>
+                        👉<span class="bold-head">Conduct investigations of complex problems:</span> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid
+                        <br>
+                        👉<span class="bold-head">Modern tool usage: </span> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the
+                        <br>
+                        👉<span class="bold-head">The engineer and society: </span>Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering
+                        <br>
+                        👉<span class="bold-head">Environment and sustainability:</span> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable
+                        <br>
+                        👉<span class="bold-head">Ethics: </span> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering
+                        <br>
+                        👉<span class="bold-head">Individual and team work: </span> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary
+                        <br>
+                        👉<span class="bold-head">Communication: </span> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear
+                        <br>
+                        👉<span class="bold-head">Project management and finance:</span> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary
+                        <br>
+                        👉<span class="bold-head">Life-long learning:</span> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological.
+                        <br>
+                    </p>
+                    <h3>PROGRAM SPECIFIC OUTCOMES (PSOs):</h3>
+                    <p>
+                        <span>PSO1: Programming Skills:</span> Identify required data structures, design suitable algorithms, develop and maintain software for real world problems.
+                        <span>PSO2: Computing Paradigms:</span> Understand the evolutionary changes in computing paradigms and apply knowledge based on context to meet challenges of the future.
+                    </p>
+                </div>
+            </div>
+            <div id="laboratories1">
+                <h2>Laboratories</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name of the Laboratory</th>
+                            <th>List of Softwares</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>C Programming Lab</td>
+                            <td rowspan="12" style="    background: #cf2c31;
+                            color: #fff;
+                            line-height: 128px;">C, C++, Jdk1.8,
+                            Visual Studio 2010,<br> Oracle 11g,
+                            Tomcat, Jsdk, Net Beans 7.01,
+                            Windows 10, Ubuntu,<br>
+                            Windows Server  2012, e-Swecha, Fedora,<br>
+                            MS Office 2010, MySql
+                            IBM RSA ENT, <br>Eclipse 4.2, RTool,
+                            Globerena ECSL, K-Van ECL.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>English Communications Lab</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hadoop & Big Data Lab</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Data Structures Lab</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Data Bases Lab</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Object Oriented Programming Lab</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Networking Programming Lab</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Multimedia & Modelling Lab</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>System Programming Lab</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Project Lab</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Cloud Lab</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>R&D Lab</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="lab-images">
+                    <img src="../images/cse-lab-image-1.jpg" alt="lab-image-1">
+                    <img src="../images/cse-lab-image-2.jpg" alt="lab-image-2">
+                    <img src="../images/cse-lab-image-3.jpg" alt="lab-image-3">
+                </div>
+            </div>
+            <div id="clubs1">
+                <h2>Dept. Club</h2>
+                <h3>About the Association:</h3>
+                <div id="seamic-grp">
+                    <p id="seamic-p">
+                        <span class="bold-head">System Engineers Association of MIC (SEAMIC)</span> is an association of student group activities which was inaugurated on 2nd September 2006 by Dr. T. Hanuman Chowdary, former IT Adviser to Government of Andhra Pradesh. The main thought of forming up of this association is that the students are found to be completely engaged with their academic studies and have no recreation to polish their skills and talents. Though there are so many built-in qualities in them, they were lagging behind in this competitive world, as they have no time to concentrate on such matters. As the students spend most of their valuable time in the college campus itself, they must be given a chance of providing themselves in front of the experienced persons.
+                    </p>
+                    <img src="../images/seamic.jpg" alt="seamic-logo" id="seamic-img">
+                </div><br>
+                <p>Hence that gave rise to a thought of making "The buds flower up with their fragrance", which could be made possible with this association called "SEAMIC" with its motto "Destiny Through Innovation".</p>
+                <h3>Theme of the Association:</h3>
+                <p>The main theme of formation of student group is to make them active, be aware of all the latest trends and competitions that arise in the academics and other activities. The outcome of which is to make them competent and all-time outstanding achievers. The overall concentration is in improving their communication skills, self-management of tasks, making them bold enough to face the competitive world, making them gain excess knowledge other than book-knowledge and finally to make them build-up brotherhood relations in public.</p>
+                <h3>Role of Students:</h3>
+                <p>This association is mainly comprised of students. This is because students should be able to learn many issues like managing and doing tasks other than what they regularly study in classrooms. The whole program planning, organization and the participations are taken over by the students under proper guidance of the faculty members. A student body - the representatives of different aspects are selected and guided by the faculty to carry out the whole program implementation.</p>
+                <h3>Achieving the Target:</h3>
+                <p>The members and the faculty of the CSE Department are confident to achieve the theme of the association as we have already proved that our students are so talented as they were able to initiate themselves in sketching out the Logo of the association that depicts "A human empowering the knowledge of Computers". Also the motto and title of the association are being selected from a list of competing entries that were collected from the students. Though it takes some time to achieve the target, we assure that we have made up a path that leads them towards the destiny through their innovations.</p>
+                <h3>Activities of SEAMIC:</h3>
+                <p>Different activities that come under SEAMIC to make the students skilled and talented around the general and technical aspects are:</p>
+                <h3>Regular:</h3>
+                <p>
+                    👉 Seminars
+                    <br>
+                    👉 Debates
+                    <br>
+                    👉 Extempore
+                    <br>
+                    👉 Quiz
+                    <br>
+                    👉 Group Discussions
+                    <br>
+                    👉 IQs
+                    <br>
+                    👉 Team-Oriented technical tasks (Practical)
+                    <br>
+                    👉 Current Affairs
+                    <br>
+                    👉 Cultural Activities
+                    <br>
+                </p>
+                <h3>Special</h3>
+                <p>
+                    👉 Guest Lectures by Subject Matter Experts (SMEs).
+                    <br>
+                    👉 Carrer Guidance by Resource Persons.
+                    <br>
+                    👉 Management Skills by Resource Persons.
+                    <br>
+                    👉 Workshops.
+                    <br>
+                    👉 Techno fests.
+                    <br>
+                    👉 Trail Lecturers by skilled Senior Students.
+                    <br>
+                </p>
+                <h3>Initiation & Extension of SEAMIC:</h3>
+                <p>As it is the initiation of SEAMIC - the inaugural function is being carried out at first. Every academic year, an opening function of SEAMIC is being conducted along with the schedule of the Fresher’s Day and all the above-mentioned activities are carried out among students throughout the year, depending on the academic schedule. At the end of the academic year, a closing function is being conducted along with the schedule of Farewell Party in which all the winners of the competitions will be given prizes.
+                </p>
+                <h3>Objectives of SEAMIC:</h3>
+                <p class="line-height">
+                    The main objectives that incorporate the activities of SEAMIC, which leads to the success of students, are:
+                    <br><br>
+                    👉Encouraging the students and improving their confidence level.
+                    <br>
+                    👉Extracting the hidden skills of the talented students in general and technical aspects.
+                    <br>
+                    👉Improving the Communication Skills, Self-Management Skills and Discipline etc.
+                    <br>
+                    👉To affirm the roots of continuous learning process and to make them aware of all the new trends.
+                    <br>
+                    👉Upgrading on the latest issues in IT & real world.
+                    <br>
+                    👉Practically making them understand the competitions in the real world.
+                    <br>
+                    👉Inculcating the humanly and brotherly relations in them to deal with the public.
+                    <br>
+                    👉Brushing up their application skills through practical knowledge.
+                    <br>
+                    👉To make them get into immediate employment after their course completion.
+                    <br>
+                    👉To make them succeed in the Campus Selections and to route up their better future.
+                    <br>
+                    👉To find the students who have research-oriented skills and training them on interested areas through proper guidance.
+                    <br>
+                    👉To bring out the creativity of the students.
+                    <br>
+                    👉Finally, to make them all-rounder’s in all aspects.
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="civil dep-isactive" id="civil">
+            <ul>
+                <li id="about2" class="dep-active" onclick="toggleDepSub2('about2')">About Department</li>
+                <li id="vsnmsn2" onclick="toggleDepSub2('vsnmsn2')">Vision & Mission</li>
+                <li id="labs2" onclick="toggleDepSub2('labs2')">Laboratories</li>
+                <li id="club2" onclick="toggleDepSub2('club2')">Dept. Club</li>
+            </ul>
+            <div id="about-dep2" class="active-sub">
+                <h2>Department Of Civil Engineering
+                    <br>… We BUILD The World</h2>
+                <p>
+                    Civil Engineering is a broad field of engineering that deals with the planning, construction, and maintenance of fixed structures, or public works, as they are related to earth, water or civilization and their various processes.
+                    <br><br>
+                    The Department of Civil Engineering since its inception in 2012 has been at the forefront of teaching, research and consulting with a focus on the broad areas of Geotechnical, Structural, Transportation Systems, Hydraulics and Water Resources and Environmental Engineering.
+                    <br><br>
+                    Our faculty members are committed to delivering knowledge and expertise in the broad spectrum of Civil Engineering and are actively involved with research that caters to societal needs in general. Our students are actively involved in several internships and projects and our main aim is to evolve them into confident individuals, ready to make an impact on whatsoever profession (industrial work, research, entrepreneurship) they choose to pursue.
+                    <br><br>
+                    Our research in the department focuses on both fundamental and applied research to provide solutions that help drive the future evolution of Civil Engineering. Industry interaction and academic exchanges are an integral characteristic of our department.
+                    <br><br>
+                    Our alumni have gone on to serve in distinguished capacities in various industries, Government organizations and institutions in India and abroad.
+                </p>
+            </div>
+            <div id="vision-mission2">
+                <h2>Vision & Mission</h2>
+                <div class="vision-mission-sub">
+                    <h3>VISION</h3>
+                    <p>To impart knowledge and excellence in Civil Engineering and Technology with global perspectives to our students and to make them ethically strong engineers to build our nation</p>
+                    <h3>MISSION</h3>
+                    <p class="line-height">
+                        👉 To reinforce the students with fundamental engineering knowledge and broad set of skills.
+                        <br>
+                        👉 To make the department a center of excellence in the field of Civil Engineering and allied Research.
+                        <br>
+                        👉 To Provide knowledge base and consultancy services to the community in all areas of Civil Engineering.
+                        <br>
+                        👉 To Promote innovative and original thinking in the minds of budding engineers to face the challenges of future.
+                        <br>  
+                    </p>
+                    <h3>Civil Engineering Objectives:</h3>
+                    <p class="line-height">
+                        <span class="bold-head">1. Fundamental Knowledge:</span> Graduates of the program will be skilled in the fundamental principles of mathematics, science, and four sub-disciplines in Civil Engineering that are necessary for success in industry or graduate school.
+                        <br>
+                        <sapn class="bold-head">2. Specialization:</sapn> Graduates of the program will be proficient in each of the four sub-fields of Civil Engineering to an extent that they can pursue careers in those fields or in related inter-disciplinary fields that benefit from a strong background in applied sciences and engineering. The sub-fields emphasized by the UCLA C&EE department are Environmental Engineering, Geotechnical Engineering, Structural Engineering and Mechanics, and Water Resources Engineering. Graduates will also obtain additional depth and specialized knowledge in two of these sub-fields.
+                        <br>
+                        <span class="bold-head">3. Design Skills:</span> Graduates of the program will be skilled in problem solving, design and interpretation of experiments, and operating within a team environment for the solution of design problems in their chosen field.
+                        <br>
+                        <sapn class="bold-head">4. Professional Skills:</sapn> Graduates of the program will be capable of operating effectively in a professional environment by demonstrating technical communication skills, the ability to procure work, the ability to interact effectively with construction professionals, and an understanding of both ethical issues in Civil Engineering and the importance of Civil Engineering work to society.
+                        <br>
+                        <span class="bold-head">5. Lifelong Learning: </span>Graduates of the program will be prepared to continue their professional development based on their awareness of professional society activities, professional licensure requirements, and opportunities for further education in graduate school.
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div id="laboratories2">
+                <h2>Laboratories</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name of the Lab</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Surveying Field Work -I</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Strength of Materials Lab</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Concrete Technology Lab</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Surveying Field Work –II</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Fluid Mechanics & Hydraulic Machinery Lab</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Geotechnical Engineering Lab</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Engineering Geology Lab</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Transportation Engineering Lab</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Computer Aided Engineering Drawing Lab</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Environmental Engineering Lab</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>GIS & CAD Lab</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="lab-images">
+                    <img src="../images/civil-lab-image-1.jpg" alt="lab-image-1">
+                    <img src="../images/civil-lab-image-2.jpg" alt="lab-image-2">
+                    <img src="../images/civil-lab-image-3.jpg" alt="lab-image-3">
+                </div>
+            </div>
+            <div id="clubs2">
+                <h2>Dept. Club</h2>
+                <p class="line-height">
+                    <span class="bold-head">ALLIANCE OF CIVIL ENGINEERING TECHNOLOGY (ACET)</span> is an association of student group which was inaugurated on 11th March 2016 by Mr. M Satyanarayana Rao, DEE (R&B), Jagayyapeta.
+                    <br><br>
+                    The objectives of the Alliance of Civil Engineering Technology (ACET) a student body of the Civil Engineering Students of DVR & Dr HS MIC College of Technology, Kanchikacherla is to:
+                </p>
+                <div id="aicte-grp">
+                    <p id="aicte-p">
+                        <br>
+                        👉 Promote students’ academic, professional and other activities of mutual interests through wider, regular and frequent exchange of views among students, faculty/staff members, and industry related professionals.
+                        <br>
+                        👉 Establish close link with other institution/organization/industry and academic disciplines to promote mutual cooperation and to facilitate multidisciplinary research approach.
+                        <br>
+                        👉 Provide a common forum for students to develop their presentation skills and advance their research activities.
+                        <br>
+                    </p>
+                    <img src="../images/aicte.jpg" alt="aicte-logo" id="aicte-img">
+                </div>
+                <br>
+                <p>
+                    The association aims to achieve the above objectives by providing the much-needed practical exposure to the community members through its regular activities like technical seminars, research symposia, talks on ongoing research practices throughout the globe and many other related topics from distinguished practitioners of the trade. Collaboration between academics and industry is important for the advancement of engineering teaching and research. With this aim, to give our students some practical insight into Civil Engineering, the students’ association plans to organize several visits throughout the year to ongoing construction sites thus giving them a chance to interact with key personnel of the industry.
+                </p>
+                <br>
+                <p>
+                    ACET also plans to provide a platform to budding civil engineers across the country to create, innovate and learn various aspects of civil engineering through competitions, events and Symposia (research paper conference).
+                </p>
+            </div>
+        </div>
+        <div class="ece" id="ece">
+            <ul>
+                <li id="about3" class="dep-active" onclick="toggleDepSub3('about3')">About Department</li>
+                <li id="vsnmsn3" onclick="toggleDepSub3('vsnmsn3')">Vision & Mission</li>
+                <li id="labs3" onclick="toggleDepSub3('labs3')">Laboratories</li>
+                <li id="club3" onclick="toggleDepSub3('club3')">Dept. Club</li>
+            </ul>
+            <div id="about-dep3" class="active-sub">
+                <h2>Department Of Electronics And Communication Engineering
+                    <br>… We CONNECT The World</h2>
+                    <p>Electronics and Communication Engineering is concerned with the design, development, manufacture and application of electronic devices, circuits, and systems. Electronics and Communication Engineering lays greater emphasis on deep understanding of fundamental principles and state-of-the-art knowledge about Electronic Devices and Circuits, Computer Architecture and Microprocessors, VLSI and Embedded systems, Electromagnetic Field Theory, Analog and Digital Communication, Digital Signal Processing, Microwave and Broadband Communications. <br><br>
+
+                        The Department of Electronics and Communication Engineering (ECE) was established in the year 2002 to meet the needs of the emerging industry and research. The main focused areas of the department are Signal and Image Processing, Wireless Communication, VLSI Design and Embedded Systems, Antenna Theory and Design. The department was accredited by National Board of Accreditation (NBA). The department has MoUs with leading Industries. The department has well-qualified and experienced faculty with a healthy student to staff ratio of 15:1. The list includes Doctorates, faculty pursuing PhD and the remaining are Post-Graduates. <br><br>
+                        
+                        The department provides opportunities to students to work on various projects, develop communication skills, explore internship opportunities in industry and take part in national and international design contests. The Department has a number of well-equipped laboratories and provides excellent facilities for learning. The Department periodically organizes seminars, symposia, workshops and guest lecturers for the benefit of both the students and the faculty. The department has entered into an MoU with BSNL, Indian Railways, MIC Electronics, and Microlinks. <br><br>
+                        
+                        Most of the students are placed in companies like MIC Electronics, Efftronics, TCS, Tech Mahindra, Infosys, Wipro, HCL, Byjus, Accenture etc with a salary range from 1.5 LPA to 5 LPA. The alumni of the department have reached great heights in life over the years. <br><br>
+                        
+                        The department is accredited by the National Board of Accreditation (NBA) for a period of 3 years for UG in 2016. It is reaccredited in 2019.
+                    </p>
+            </div>
+            <div id="vision-mission3">
+                <h2>Vision & Mission</h2>
+                <div class="vision-mission-sub">
+                    <h3>Vision of the Department:</h3>
+                    <p>To create globally competent professionals in the field of engineering, imparting excellent teaching, research environment, collaborative activities and techno-services for real world applications.</p>
+                    <h3>Mission of the Department:</h3>
+                    <p class="line-height">
+                        👉To Educate and empower the students with latest trends in electronics and communication engineering to meet the growing real world challenges. <br>
+                        👉To impart quality education with experienced and qualified teaching faculty. <br>
+                        👉To inculcate professional ethics and morals in preparing responsible citizens. <br>
+                        👉To carry out research and development and collaborative activities. <br>
+                    </p>
+                    <h3>Programme Educational Objectives:</h3>
+                    <p class="line-height">
+                    <span class="bold-head">PEO 1: </span> To acquire cognizant fundamental knowledge in subjects like Basic Sciences, Engineering Mathematics & Engineering Sciences. <br>
+                    <span class="bold-head">PEO 2:</span> To impart technical knowledge using modern tools in order to develop products for societal needs. <br>
+                    <span class="bold-head">PEO 3:</span> Enabling Graduates for Technical Organizations by providing soft skills and Technical Knowledge. <br>
+                    <span class="bold-head">PEO 4:</span> To inculcate Research Aptitude so as to Engage in lifelong learning with Ethical and Holistic attitude.
+                    </p>
+                    <h3>Program Outcomes:</h3>
+                    <p class="line-height">
+                        1. Graduates will be able to apply the principles of basic sciences, mathematics, and engineering fundamentals in finding solutions to complex problems.
+                        <br>
+                        2. Graduates will acquire critical thinking skills, problem solving abilities, and familiarity with the computational procedures essential to the field.
+                        <br>
+                        3. Graduates will be able to design various types of systems required for technical advancements and societal needs.
+                        <br>
+                        4. Graduates will be able to use research based knowledge to conduct experiments and interpret experimental data.
+                        <br>
+                        5. Graduates gain hands on experience in using latest software and hardware tools for obtaining solutions to engineering problems.
+                        <br>
+                        6. Graduates will be able to apply their knowledge to tackle societal, health, safety, legal and cultural issues.
+                        <br>
+                        7. Graduates will possess adequate knowledge required for technological development keeping in view environmental effects and real time problems.
+                        <br>
+                        8. Graduates will have professional ethics and the culture of practicing the established norms of engineering.
+                        <br>
+                        9. Graduates will acquire the capability of working productively as individuals, as members or leaders in diverse environment.
+                        <br>
+                        10. Graduates will be able to articulate their ideas clearly with excellent soft skills and prepare technical reports.
+                        <br>
+                        11. Graduates will acquire knowledge required for project and finance management.
+                        <br>
+                        12. Graduates will have ability to engage in lifelong learning to keep abreast of ever changing technology.
+                        <br>
+                    </p>
+                    <h3>Program Specific Outcomes (PSOs)</h3>
+                    <p class="line-height">
+                        1. Enable students to apply concept of Electronic and Communication Engineering for designing and testing various electronics module in the area of Communication, Networking, Signal and Image Processing, Embedded System, VLSI and Control system.
+                        <br>
+                        2. Enriching an ability to solve complex real time problems related to Electronic and Communication Engineering with significant technical and analytical knowledge using modern tools.
+                        <br>
+                        3. Acquaintance of societal needs, environment, health and safety with ethical attitude to serve as a good professional and person.
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div id="laboratories3">
+                <h2>Laboratories</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name of the Laboratory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Electronic Devices & Circuits Lab</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Electronic Circuit Analysis Lab</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Analog Communication Lab</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Digital Communication Lab</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Linear IC Applications Lab</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Digital System Design & DICA Lab</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Pulse & Digital Circuits Lab</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Digital Signal Processing Lab</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Micro Processors & Micro Controllers Lab</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>VLSI Lab</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Microwave Engineering & Optical Communication Lab</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Embedded Systems Lab</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="lab-images">
+                    <img src="../images/ece-lab-image-1.jpg" alt="lab-image-1">
+                    <img src="../images/ece-lab-image-2.jpg" alt="lab-image-2">
+                    <img src="../images/ece-lab-image-3.jpg" alt="lab-image-3">
+                </div>
+            </div>
+            <div id="clubs3">
+                <h3>Activities of the Department:</h3>
+                <div id="espice-grp">
+                    <p id="espice-p">
+                        Department of ECE is organizing student Association activities every semester. The Department periodically organizes seminars, symposia, workshops and guest lectures for the benefit of both the students and the faculty. Seminars will be conducted every week as per the given schedule. Students are trained up for campus recruitments through Finishing School Programme classes i.e., Aptitude, Verbal, and Soft Skills. In every academic year, department of ECE organizes National Level Symposium like “Techno Spark”student activity in terms of Working Model Exhibition. The department has Memorandum of Understanding (MOUs) with organizations like South Central Railway, MIC Electronics, Micro Links. ECE department is encouraging all the faculty and students towards professional body memberships and activities. The department has ISTE, IETE and IEEE student chapters.
+                    </p>
+                    <img src="../images/espice.png" alt="espice-logo" id="espice-img">
+                </div>
+                <h3>Department News Letter:</h3>
+                <p class="line-height">
+                    Department of ECE releases a half yearly news letter named "ECE PULSE" with 'the heartbeat of innovation' as its tagline.
+                    <br>
+                    <br>
+                    <span class="bold-head">columns:</span>
+                    <br>
+                    <br>
+                    👉 Seminars / Workshops.
+                    <br>
+                    👉 Faculty Achievements.
+                    <br>
+                    👉 Student Achievements.
+                    <br>
+                    👉 Role of honour for the best students.
+                    <br>
+                    👉 Inspiring Quotes.
+                    <br>
+                    👉 Puzzles.
+                    <br>
+                </p>
+            </div>
+    </div>
     </div>
     <hr id="link-section-seperator">
     <!-- Link and Details-->
@@ -227,5 +863,6 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="depdetails.js"></script>
 </body>
 </html>

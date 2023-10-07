@@ -274,7 +274,7 @@ footer{
 /* IQAC Description */
 #depdetails{
     width: 90%;
-    height: 120%;
+    /* height: 120%; */
     border: solid 2px #cf2c31;
     margin: auto;
     display: flex;
@@ -286,9 +286,12 @@ footer{
     width: 100%;
     height: 10%;
 }
+
 .department-list ul{
+    /* width: 80%;
+    height: 80%; */
     width: 80%;
-    height: 80%;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,14 +319,23 @@ footer{
     color: #cf2c31 !important;
 }
 
-.bed{
+.bed,.cse,.civil,.ece,.eee,.it,.mech,.dms,.dca{
     width: 100%;
     height: 30%;
 }
 
-.bed ul{
+
+.bed ul,
+.cse ul,
+.civil ul,
+.ece ul,
+.eee ul,
+.it ul,
+.mech ul,
+.dms ul,
+.dca ul {
     width: 80%;
-    height: 30%;
+    height: 8vh;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -332,7 +344,15 @@ footer{
     margin: 0 auto;
 }
 
-.bed ul li{
+.bed ul li,
+.cse ul li,
+.civil ul li,
+.ece ul li,
+.eee ul li,
+.it ul li,
+.mech ul li,
+.dms ul li,
+.dca ul li{
     border-radius: 50px;
     color: black;
     width: 15%;
@@ -343,23 +363,150 @@ footer{
     font-weight: 800;
     font-size: 1.2vw;
 }
-.bed h2{
+.bed h2,
+.cse h2,
+.civil h2,
+.ece h2,
+.eee h2,
+.it h2,
+.mech h2,
+.dms h2,
+.dca h2{
     text-align: center;
     color: #071b8b;
     font-size: 2.4vw;
     margin: 2%;
     font-weight: 600;
 }
-.bed p{
+.bed p,
+.cse p,
+.civil p,
+.ece p,
+.eee p,
+.it p,
+.mech p,
+.dms p,
+.dca p{
     color: grey;
     width: 80%;
     margin: auto;
     font-size: 1.3vw;
     line-height: 4vh;
 }
+
+.bed h3,
+.cse h3,
+.civil h3,
+.ece h3,
+.eee h3,
+.it h3,
+.mech h3,
+.dms h3,
+.dca h3{
+    color: #cf2c31;
+    display: inline-block;
+    margin: auto;
+    font-size: 1.4vw;
+    width: 80%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .dep-active{
     background-color: #071b8b;
     color: white !important;
+}
+
+#about,#vsnmsn,#labs,
+#about1,#vsnmsn1,#labs1,#club1,
+#about2,#vsnmsn2,#labs2,#club2,
+#BED,#CSE,#ECE,#EEE,#DMS,#DCA,#MECH,#IT,#CIVIL{
+    cursor: pointer;
+}
+
+#about-dep,#vision-mission,#laboratories{
+    display: none;
+}
+
+#about-dep1,#vision-mission1,#laboratories1,#clubs1{
+    display: none;
+}
+
+#about-dep2,#vision-mission2,#laboratories2,#clubs2{
+    display: none;
+}
+
+#about-dep3,#vision-mission3,#laboratories3,#clubs3{
+    display: none;
+}
+
+.active-sub{
+    display: block !important;
+}
+#bed,#cse,#civil,#mech,#it,#dms,#dca,#eee{
+    display: none;
+}
+
+.bold-head{
+    font-weight: 800;
+}
+.line-height{
+    line-height: 5vh;
+}
+
+/* .dep-isactive{
+    display: block !important;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #ccc; /* Add light grey border to the table */
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc; /* Add light grey border to table rows */
+    border-right: 1px solid #ccc; 
+    font-size: 1.2vw;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Add a light grey background to even rows */
+}
+
+.lab-images{
+    width: 60%;
+    display: flex;
+    margin: 2% auto;
+    justify-content: center;
+}
+
+.lab-images img{
+    width: 33%;
+    margin: 2% auto;
+}
+
+#seamic-grp,#aicte-grp,#espice-grp{
+    width: 80%;
+    margin: auto;
+}
+
+#seamic-p,#aicte-p,#espice-p{
+    width: 70%;
+    margin: auto;
+    float: left;
+}
+
+#espice-img{
+    width: 25%;
+}
+
+#seamic-img,#aicte-img,#espice-img{
+    margin-left: 5%;
 }
 
 /* media queris for responsive design */
