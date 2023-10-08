@@ -274,7 +274,6 @@ footer{
 /* IQAC Description */
 #depdetails{
     width: 90%;
-    /* height: 120%; */
     border: solid 2px #cf2c31;
     margin: auto;
     display: flex;
@@ -288,8 +287,6 @@ footer{
 }
 
 .department-list ul{
-    /* width: 80%;
-    height: 80%; */
     width: 80%;
     height: 8vh;
     display: flex;
@@ -323,7 +320,6 @@ footer{
     width: 100%;
     height: 30%;
 }
-
 
 .bed ul,
 .cse ul,
@@ -421,6 +417,10 @@ footer{
 #about,#vsnmsn,#labs,
 #about1,#vsnmsn1,#labs1,#club1,
 #about2,#vsnmsn2,#labs2,#club2,
+#about3,#vsnmsn3,#labs3,#club3,
+#about4,#vsnmsn4,#labs4,#club4,
+#about5,#labs5,
+#about6,#vsnmsn6,#labs6,#club6,
 #BED,#CSE,#ECE,#EEE,#DMS,#DCA,#MECH,#IT,#CIVIL{
     cursor: pointer;
 }
@@ -441,10 +441,22 @@ footer{
     display: none;
 }
 
+#about-dep4,#vision-mission4,#laboratories4,#clubs4{
+    display: none;
+}
+
+#about-dep5,#laboratories5{
+    display: none;
+}
+
+#about6,#vision-mission6,#laboratories6,#clubs6{
+    display: none;
+}
+
 .active-sub{
     display: block !important;
 }
-#bed,#cse,#civil,#mech,#it,#dms,#dca,#eee{
+#bed,#cse,#civil,#dms,#dca,#ece,#eee,#it{
     display: none;
 }
 
@@ -490,18 +502,18 @@ tr:nth-child(even) {
     margin: 2% auto;
 }
 
-#seamic-grp,#aicte-grp,#espice-grp{
+#seamic-grp,#aicte-grp,#espice-grp,#micame-grp{
     width: 80%;
     margin: auto;
 }
 
-#seamic-p,#aicte-p,#espice-p{
+#seamic-p,#aicte-p,#espice-p,#micame-p{
     width: 70%;
     margin: auto;
     float: left;
 }
 
-#espice-img{
+#espice-img,#micame-img{
     width: 25%;
 }
 

@@ -263,57 +263,224 @@ let vsn_msn_sub3 = document.getElementById('vsnmsn3');
 let labs_sub3 = document.getElementById('labs3');
 let club_sub3 = document.getElementById('club3');
 
-let ece_menu = [abt_dep2
-    ,vsn_msn2
-    ,labs2,club2]
-let ece_submenu = [abt_dep_sub2,vsn_msn_sub2,labs_sub2,club_sub2]
+let ece_menu = [abt_dep3,vsn_msn3,labs3,club3]
+let ece_submenu = [abt_dep_sub3,vsn_msn_sub3,labs_sub3,club_sub3]
 
-function toggleDepSub2(id){
-    if (id==="about2"){
-        civil_menu.forEach(element => {
+function toggleDepSub3(id){
+    if (id==="about3"){
+        ece_menu.forEach(element => {
             element.classList.remove('active-sub');
         });
-        civil_menu[0].classList.add('active-sub');
+        ece_menu[0].classList.add('active-sub');
 
-        civil_submenu.forEach(element => {
+        ece_submenu.forEach(element => {
             element.classList.remove('dep-active');
         });
-        civil_submenu[0].classList.add('dep-active');
+        ece_submenu[0].classList.add('dep-active');
     }
 
-    else if (id==="vsnmsn2"){
-        civil_menu.forEach(element => {
+    else if (id==="vsnmsn3"){
+        ece_menu.forEach(element => {
             element.classList.remove('active-sub');
         });
-        civil_menu[1].classList.add('active-sub');
+        ece_menu[1].classList.add('active-sub');
 
-        civil_submenu.forEach(element => {
+        ece_submenu.forEach(element => {
             element.classList.remove('dep-active');
         });
-        civil_submenu[1].classList.add('dep-active');
+        ece_submenu[1].classList.add('dep-active');
     }
 
-    else if (id==="labs2"){
-        civil_menu.forEach(element => {
+    else if (id==="labs3"){
+        ece_menu.forEach(element => {
             element.classList.remove('active-sub');
         });
-        civil_menu[2].classList.add('active-sub');
+        ece_menu[2].classList.add('active-sub');
 
-        civil_submenu.forEach(element => {
+        ece_submenu.forEach(element => {
             element.classList.remove('dep-active');
         });
-        civil_submenu[2].classList.add('dep-active');
+        ece_submenu[2].classList.add('dep-active');
     }
 
     else {
-        civil_menu.forEach(element => {
+        ece_menu.forEach(element => {
             element.classList.remove('active-sub');
         });
-        civil_menu[3].classList.add('active-sub');
+        ece_menu[3].classList.add('active-sub');
 
-        civil_submenu.forEach(element => {
+        ece_submenu.forEach(element => {
             element.classList.remove('dep-active');
         });
-        civil_submenu[3].classList.add('dep-active');
+        ece_submenu[3].classList.add('dep-active');
+    }
+}
+
+let abt_dep4 = document.getElementById('about-dep4');
+let vsn_msn4 = document.getElementById('vision-mission4');
+let labs4 = document.getElementById('laboratories4');
+let club4 = document.getElementById('clubs4');
+
+let abt_dep_sub4 = document.getElementById('about4');
+let vsn_msn_sub4 = document.getElementById('vsnmsn4');
+let labs_sub4 = document.getElementById('labs4');
+let club_sub4 = document.getElementById('club4');
+
+let eee_menu = [abt_dep4,vsn_msn4,labs4,club4]
+let eee_submenu = [abt_dep_sub4,vsn_msn_sub4,labs_sub4,club_sub4]
+
+eee_menu.forEach(element => {
+    console.log(element)
+})
+
+eee_submenu.forEach(element => {
+    console.log(element)
+});
+
+function toggleDepSub4(id){
+    if (id==="about4"){
+        eee_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        eee_menu[0].classList.add('active-sub');
+
+        eee_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        eee_submenu[0].classList.add('dep-active');
+    }
+
+    else if (id==="vsnmsn4"){
+        eee_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        eee_menu[1].classList.add('active-sub');
+
+        eee_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        eee_submenu[1].classList.add('dep-active');
+    }
+
+    else if (id==="labs4"){
+        eee_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        eee_menu[2].classList.add('active-sub');
+
+        eee_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        eee_submenu[2].classList.add('dep-active');
+    }
+
+    else {
+        eee_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        eee_menu[3].classList.add('active-sub');
+
+        eee_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        eee_submenu[3].classList.add('dep-active');
+    }
+}
+
+let abt_dep5 = document.getElementById('about-dep5');
+let labs5 = document.getElementById('laboratories5');
+
+let abt_dep_sub5 = document.getElementById('about5');
+let labs_sub5 = document.getElementById('labs5');
+
+let it_menu = [abt_dep5,labs5]
+let it_submenu = [abt_dep_sub5,labs_sub5]
+
+function toggleDepSub5(id){
+    if (id==="about5"){
+        it_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        it_menu[0].classList.add('active-sub');
+
+        it_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        it_submenu[0].classList.add('dep-active');
+    }
+
+    else {
+        it_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        it_menu[1].classList.add('active-sub');
+
+        it_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        it_submenu[1].classList.add('dep-active');
+    }
+}
+
+let abt_dep6 = document.getElementById('about-dep6');
+let vsn_msn6 = document.getElementById('vision-mission6');
+let labs6 = document.getElementById('laboratories6');
+let club6 = document.getElementById('clubs6');
+
+let abt_dep_sub6 = document.getElementById('about6');
+let vsn_msn_sub6 = document.getElementById('vsnmsn6');
+let labs_sub6 = document.getElementById('labs6');
+let club_sub6 = document.getElementById('club6');
+
+let mech_menu = [abt_dep6,vsn_msn6,labs6,club6]
+let mech_submenu = [abt_dep_sub6,vsn_msn_sub6,labs_sub6,club_sub6]
+
+function toggleDepSub6(id){
+    if (id==="about6"){
+        mech_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        mech_menu[0].classList.add('active-sub');
+
+        mech_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        mech_submenu[0].classList.add('dep-active');
+    }
+
+    else if (id==="vsnmsn6"){
+        mech_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        mech_menu[1].classList.add('active-sub');
+
+        mech_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        mech_submenu[1].classList.add('dep-active');
+    }
+
+    else if (id==="labs6"){
+        mech_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        mech_menu[2].classList.add('active-sub');
+
+        mech_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        mech_submenu[2].classList.add('dep-active');
+    }
+
+    else {
+        mech_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        mech_menu[3].classList.add('active-sub');
+
+        mech_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        mech_submenu[3].classList.add('dep-active');
     }
 }
