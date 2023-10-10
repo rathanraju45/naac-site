@@ -1,0 +1,4 @@
+branch_sub_list.forEach(element => {
+    element.classList.remove('dep-isactive')
+});
+branch_sub_list[1].classList.add('dep-isactive')

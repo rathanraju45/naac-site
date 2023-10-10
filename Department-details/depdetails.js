@@ -9,13 +9,30 @@ let IT = document.getElementById('IT');
 let MECH = document.getElementById('MECH');
 let DMS = document.getElementById('DMS');
 let DCA = document.getElementById('DCA');
+
+let bed = document.getElementById('bed');
+let cse = document.getElementById('cse');
+let civil = document.getElementById('civil');
+let ece = document.getElementById('ece');
+let eee = document.getElementById('eee');
+let it = document.getElementById('it');
+let mech = document.getElementById('mech');
+let dms = document.getElementById('dms');
+let dca = document.getElementById('dca');
+
 let branch_list = [BED,CSE,CIVIL,ECE,EEE,IT,MECH,DMS,DCA]
+let branch_sub_list =[bed,cse,civil,ece,eee,it,mech,dms,dca]
 function toggleMain(id){
     if (id==='BED'){
         branch_list.forEach(element => {
             element.classList.remove('active')
         });
         branch_list[0].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[0].classList.add('dep-isactive')
     }
 
     else if (id==='CSE'){
@@ -23,6 +40,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[1].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[1].classList.add('dep-isactive')
     }
 
     else if (id==='CIVIL'){
@@ -30,6 +52,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[2].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[2].classList.add('dep-isactive')
     }
 
     else if (id==='ECE'){
@@ -37,6 +64,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[3].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[3].classList.add('dep-isactive')
     }
 
     else if (id==='EEE'){
@@ -44,6 +76,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[4].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[4].classList.add('dep-isactive')
     }
 
     else if (id==='IT'){
@@ -51,6 +88,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[5].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[5].classList.add('dep-isactive')
     }
 
     else if (id==='MECH'){
@@ -58,6 +100,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[6].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[6].classList.add('dep-isactive')
     }
 
     else if (id==='DMS'){
@@ -65,6 +112,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[7].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[7].classList.add('dep-isactive')
     }
 
     else if (id==='DCA'){
@@ -72,6 +124,11 @@ function toggleMain(id){
             element.classList.remove('active')
         });
         branch_list[8].classList.add('active')
+
+        branch_sub_list.forEach(element => {
+            element.classList.remove('dep-isactive')
+        });
+        branch_sub_list[8].classList.add('dep-isactive')
     }
 }
 
@@ -253,6 +310,10 @@ function toggleDepSub2(id){
     }
 }
 
+// CIVIL sub menu ends
+
+// ECE sub menu selection starts
+
 let abt_dep3 = document.getElementById('about-dep3');
 let vsn_msn3 = document.getElementById('vision-mission3');
 let labs3 = document.getElementById('laboratories3');
@@ -316,6 +377,10 @@ function toggleDepSub3(id){
     }
 }
 
+// ECE sub menu ends
+
+// EEE sub menu selection starts
+
 let abt_dep4 = document.getElementById('about-dep4');
 let vsn_msn4 = document.getElementById('vision-mission4');
 let labs4 = document.getElementById('laboratories4');
@@ -328,14 +393,6 @@ let club_sub4 = document.getElementById('club4');
 
 let eee_menu = [abt_dep4,vsn_msn4,labs4,club4]
 let eee_submenu = [abt_dep_sub4,vsn_msn_sub4,labs_sub4,club_sub4]
-
-eee_menu.forEach(element => {
-    console.log(element)
-})
-
-eee_submenu.forEach(element => {
-    console.log(element)
-});
 
 function toggleDepSub4(id){
     if (id==="about4"){
@@ -387,6 +444,10 @@ function toggleDepSub4(id){
     }
 }
 
+// EEE sub menu ends
+
+//IT sub menu selection starts
+
 let abt_dep5 = document.getElementById('about-dep5');
 let labs5 = document.getElementById('laboratories5');
 
@@ -422,6 +483,10 @@ function toggleDepSub5(id){
     }
 }
 
+//IT sub menu ends
+
+//MECH sub menu selection stats
+
 let abt_dep6 = document.getElementById('about-dep6');
 let vsn_msn6 = document.getElementById('vision-mission6');
 let labs6 = document.getElementById('laboratories6');
@@ -434,6 +499,7 @@ let club_sub6 = document.getElementById('club6');
 
 let mech_menu = [abt_dep6,vsn_msn6,labs6,club6]
 let mech_submenu = [abt_dep_sub6,vsn_msn_sub6,labs_sub6,club_sub6]
+
 
 function toggleDepSub6(id){
     if (id==="about6"){
@@ -484,3 +550,45 @@ function toggleDepSub6(id){
         mech_submenu[3].classList.add('dep-active');
     }
 }
+
+//MECH sub menu ends
+
+//DMS sub menu selection
+
+let abt_dep7 = document.getElementById('about-dep7');
+let club7 = document.getElementById('clubs7');
+
+let abt_dep_sub7 = document.getElementById('about7');
+let club_sub7 = document.getElementById('club7');
+
+let dms_menu = [abt_dep7,club7]
+let dms_submenu = [abt_dep_sub7,club_sub7]
+
+
+function toggleDepSub7(id){
+    if (id==="about7"){
+        dms_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        dms_menu[0].classList.add('active-sub');
+
+        dms_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        dms_submenu[0].classList.add('dep-active');
+    }
+
+    else {
+        dms_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        dms_menu[1].classList.add('active-sub');
+
+        dms_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        dms_submenu[1].classList.add('dep-active');
+    }
+}
+
+//DMS sub menu ends
