@@ -476,6 +476,11 @@ footer{
     #nav-span{
         font-size: 3.5vw;
     }
+
+    #Departments{
+        display: block;
+    }
+
    #Departments h2{
     width: 90vw;
     font-size: 5.5vw;
@@ -490,6 +495,15 @@ footer{
    #Departments li{
     font-size: 3.5vw;
    }
+
+   .department{
+    z-index: -1;
+   }
+
+   #h3-anomaly{
+    font-size: 4.2vw !important;
+    }
+   
    footer{
     width: 100vw;
    }

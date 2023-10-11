@@ -1,5 +1,3 @@
-// Main branch selection
-
 let BED = document.getElementById('BED');
 let CSE = document.getElementById('CSE');
 let CIVIL = document.getElementById('CIVIL');
@@ -22,7 +20,180 @@ let dca = document.getElementById('dca');
 
 let branch_list = [BED,CSE,CIVIL,ECE,EEE,IT,MECH,DMS,DCA]
 let branch_sub_list =[bed,cse,civil,ece,eee,it,mech,dms,dca]
+
+let abt_dep = document.getElementById('about-dep');
+let vsn_msn = document.getElementById('vision-mission');
+let labs = document.getElementById('laboratories');
+
+let abt_dep_sub = document.getElementById('about');
+let vsn_msn_sub = document.getElementById('vsnmsn');
+let labs_sub = document.getElementById('labs');
+
+let abt_dep1 = document.getElementById('about-dep1');
+let vsn_msn1 = document.getElementById('vision-mission1');
+let labs1 = document.getElementById('laboratories1');
+let club1 = document.getElementById('clubs1');
+
+let abt_dep_sub1 = document.getElementById('about1');
+let vsn_msn_sub1 = document.getElementById('vsnmsn1');
+let labs_sub1 = document.getElementById('labs1');
+let club_sub1 = document.getElementById('club1');
+
+let cse_menu = [abt_dep1,vsn_msn1,labs1,club1]
+let cse_submenu = [abt_dep_sub1,vsn_msn_sub1,labs_sub1,club_sub1]
+
+let abt_dep2 = document.getElementById('about-dep2');
+let vsn_msn2 = document.getElementById('vision-mission2');
+let labs2 = document.getElementById('laboratories2');
+let club2 = document.getElementById('clubs2');
+
+let abt_dep_sub2 = document.getElementById('about2');
+let vsn_msn_sub2 = document.getElementById('vsnmsn2');
+let labs_sub2 = document.getElementById('labs2');
+let club_sub2 = document.getElementById('club2');
+
+let civil_menu = [abt_dep2,vsn_msn2,labs2,club2]
+let civil_submenu = [abt_dep_sub2,vsn_msn_sub2,labs_sub2,club_sub2]
+
+let abt_dep3 = document.getElementById('about-dep3');
+let vsn_msn3 = document.getElementById('vision-mission3');
+let labs3 = document.getElementById('laboratories3');
+let club3 = document.getElementById('clubs3');
+
+let abt_dep_sub3 = document.getElementById('about3');
+let vsn_msn_sub3 = document.getElementById('vsnmsn3');
+let labs_sub3 = document.getElementById('labs3');
+let club_sub3 = document.getElementById('club3');
+
+let ece_menu = [abt_dep3,vsn_msn3,labs3,club3]
+let ece_submenu = [abt_dep_sub3,vsn_msn_sub3,labs_sub3,club_sub3]
+
+let abt_dep4 = document.getElementById('about-dep4');
+let vsn_msn4 = document.getElementById('vision-mission4');
+let labs4 = document.getElementById('laboratories4');
+let club4 = document.getElementById('clubs4');
+
+let abt_dep_sub4 = document.getElementById('about4');
+let vsn_msn_sub4 = document.getElementById('vsnmsn4');
+let labs_sub4 = document.getElementById('labs4');
+let club_sub4 = document.getElementById('club4');
+
+let eee_menu = [abt_dep4,vsn_msn4,labs4,club4]
+let eee_submenu = [abt_dep_sub4,vsn_msn_sub4,labs_sub4,club_sub4]
+
+let abt_dep5 = document.getElementById('about-dep5');
+let labs5 = document.getElementById('laboratories5');
+
+let abt_dep_sub5 = document.getElementById('about5');
+let labs_sub5 = document.getElementById('labs5');
+
+let it_menu = [abt_dep5,labs5]
+let it_submenu = [abt_dep_sub5,labs_sub5]
+
+let abt_dep6 = document.getElementById('about-dep6');
+let vsn_msn6 = document.getElementById('vision-mission6');
+let labs6 = document.getElementById('laboratories6');
+let club6 = document.getElementById('clubs6');
+
+let abt_dep_sub6 = document.getElementById('about6');
+let vsn_msn_sub6 = document.getElementById('vsnmsn6');
+let labs_sub6 = document.getElementById('labs6');
+let club_sub6 = document.getElementById('club6');
+
+let mech_menu = [abt_dep6,vsn_msn6,labs6,club6]
+let mech_submenu = [abt_dep_sub6,vsn_msn_sub6,labs_sub6,club_sub6]
+
+let abt_dep7 = document.getElementById('about-dep7');
+let club7 = document.getElementById('clubs7');
+
+let abt_dep_sub7 = document.getElementById('about7');
+let club_sub7 = document.getElementById('club7');
+
+let dms_menu = [abt_dep7,club7]
+let dms_submenu = [abt_dep_sub7,club_sub7]
+
+dept_arr = [
+    "computer-science-engineering",
+    "civil-engineering",
+    "mechanical-engineering",
+    "electronics-communication-engineering",
+    "electrical-electronics-engineering",
+    "information-technology",
+    "department-of-management-studies",
+    "department-of-computer-applications",
+    "basic-engineering"
+]
+
+//Navigation from the Departments page
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    function getDivParameter() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("branch");
+    }
+
+    function updateContent(){
+        let branch = getDivParameter();
+        if (branch === null){
+            branch = 'basic-engineering'
+        }
+        if (dept_arr.includes(branch)){
+            if (branch === 'basic-engineering'){
+                toggleMain('BED');
+            }
+
+            else if (branch === 'computer-science-engineering'){
+                toggleMain('CSE');
+            }
+
+            else if (branch === 'civil-engineering'){
+                toggleMain('CIVIL');
+            }
+
+            else if (branch === 'electronics-communication-engineering'){
+                toggleMain('ECE');
+            }
+
+            else if (branch === 'electrical-electronics-engineering'){
+                toggleMain('EEE');
+            }
+
+            else if (branch === 'information-technology'){
+                toggleMain('IT');
+            }
+
+            else if (branch === 'mechanical-engineering'){
+                toggleMain('MECH');
+            }
+
+            else if (branch === 'department-of-management-studies'){
+                toggleMain('DMS');
+            }
+
+            else if (branch === 'department-of-computer-applications'){
+                toggleMain('DCA');
+            }  
+        }
+
+        else {
+            errorPage();
+        }
+    }
+
+    updateContent();
+});
+
+function errorPage(){
+    window.location.href='../Error-page/error.html'
+};
+
+// Main branch selection
+
 function toggleMain(id){
+
+    const url = new URL(window.location.href);
+
     if (id==='BED'){
         branch_list.forEach(element => {
             element.classList.remove('active')
@@ -33,6 +204,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[0].classList.add('dep-isactive')
+
+        document.title = 'Basic Engineering'
+
+        url.searchParams.set("branch","basic-engineering")
     }
 
     else if (id==='CSE'){
@@ -45,6 +220,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[1].classList.add('dep-isactive')
+
+        document.title ='Computer Science Engineering'
+
+        url.searchParams.set("branch","computer-science-engineering")
     }
 
     else if (id==='CIVIL'){
@@ -57,6 +236,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[2].classList.add('dep-isactive')
+
+        document.title = 'Civil Enginerring'
+
+        url.searchParams.set("branch","civil-engineering")
     }
 
     else if (id==='ECE'){
@@ -69,6 +252,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[3].classList.add('dep-isactive')
+
+        document.title = 'Electronics & Communication Engineering'
+
+        url.searchParams.set("branch","electronics-communication-engineering")
     }
 
     else if (id==='EEE'){
@@ -81,6 +268,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[4].classList.add('dep-isactive')
+
+        document.title = 'Elecrical & Electronics Engineering'
+
+        url.searchParams.set("branch","electrical-electronics-engineering")
     }
 
     else if (id==='IT'){
@@ -93,6 +284,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[5].classList.add('dep-isactive')
+
+        document.title = 'Information Technology'
+
+        url.searchParams.set("branch","information-technology")
     }
 
     else if (id==='MECH'){
@@ -105,6 +300,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[6].classList.add('dep-isactive')
+
+        document.title = 'Mechnaical Engineering'
+
+        url.searchParams.set("branch","mechanical-engineering")
     }
 
     else if (id==='DMS'){
@@ -117,6 +316,10 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[7].classList.add('dep-isactive')
+
+        document.title = 'Management Studies'
+
+        url.searchParams.set("branch","department-of-management-studies")
     }
 
     else if (id==='DCA'){
@@ -129,20 +332,18 @@ function toggleMain(id){
             element.classList.remove('dep-isactive')
         });
         branch_sub_list[8].classList.add('dep-isactive')
+
+        document.title = 'Computer Applications'
+
+        url.searchParams.set("branch","department-of-computer-applications")
     }
-}
+
+    window.history.replaceState({}, "", url.toString());
+};
 
 // Miain branch selection ends
 
 //BED department sub menu selection
-
-let abt_dep = document.getElementById('about-dep');
-let vsn_msn = document.getElementById('vision-mission');
-let labs = document.getElementById('laboratories');
-
-let abt_dep_sub = document.getElementById('about');
-let vsn_msn_sub = document.getElementById('vsnmsn');
-let labs_sub = document.getElementById('labs');
 
 function toggleDepSub(id){
     if (id==="about"){
@@ -179,19 +380,6 @@ function toggleDepSub(id){
 //BED Sub menu selection ends
 
 //CSE Sub menu selection
-
-let abt_dep1 = document.getElementById('about-dep1');
-let vsn_msn1 = document.getElementById('vision-mission1');
-let labs1 = document.getElementById('laboratories1');
-let club1 = document.getElementById('clubs1');
-
-let abt_dep_sub1 = document.getElementById('about1');
-let vsn_msn_sub1 = document.getElementById('vsnmsn1');
-let labs_sub1 = document.getElementById('labs1');
-let club_sub1 = document.getElementById('club1');
-
-let cse_menu = [abt_dep1,vsn_msn1,labs1,club1]
-let cse_submenu = [abt_dep_sub1,vsn_msn_sub1,labs_sub1,club_sub1]
 
 function toggleDepSub1(id){
     if (id==="about1"){
@@ -247,19 +435,6 @@ function toggleDepSub1(id){
 
 //civil sub menu selection
 
-let abt_dep2 = document.getElementById('about-dep2');
-let vsn_msn2 = document.getElementById('vision-mission2');
-let labs2 = document.getElementById('laboratories2');
-let club2 = document.getElementById('clubs2');
-
-let abt_dep_sub2 = document.getElementById('about2');
-let vsn_msn_sub2 = document.getElementById('vsnmsn2');
-let labs_sub2 = document.getElementById('labs2');
-let club_sub2 = document.getElementById('club2');
-
-let civil_menu = [abt_dep2,vsn_msn2,labs2,club2]
-let civil_submenu = [abt_dep_sub2,vsn_msn_sub2,labs_sub2,club_sub2]
-
 function toggleDepSub2(id){
     if (id==="about2"){
         civil_menu.forEach(element => {
@@ -313,19 +488,6 @@ function toggleDepSub2(id){
 // CIVIL sub menu ends
 
 // ECE sub menu selection starts
-
-let abt_dep3 = document.getElementById('about-dep3');
-let vsn_msn3 = document.getElementById('vision-mission3');
-let labs3 = document.getElementById('laboratories3');
-let club3 = document.getElementById('clubs3');
-
-let abt_dep_sub3 = document.getElementById('about3');
-let vsn_msn_sub3 = document.getElementById('vsnmsn3');
-let labs_sub3 = document.getElementById('labs3');
-let club_sub3 = document.getElementById('club3');
-
-let ece_menu = [abt_dep3,vsn_msn3,labs3,club3]
-let ece_submenu = [abt_dep_sub3,vsn_msn_sub3,labs_sub3,club_sub3]
 
 function toggleDepSub3(id){
     if (id==="about3"){
@@ -381,19 +543,6 @@ function toggleDepSub3(id){
 
 // EEE sub menu selection starts
 
-let abt_dep4 = document.getElementById('about-dep4');
-let vsn_msn4 = document.getElementById('vision-mission4');
-let labs4 = document.getElementById('laboratories4');
-let club4 = document.getElementById('clubs4');
-
-let abt_dep_sub4 = document.getElementById('about4');
-let vsn_msn_sub4 = document.getElementById('vsnmsn4');
-let labs_sub4 = document.getElementById('labs4');
-let club_sub4 = document.getElementById('club4');
-
-let eee_menu = [abt_dep4,vsn_msn4,labs4,club4]
-let eee_submenu = [abt_dep_sub4,vsn_msn_sub4,labs_sub4,club_sub4]
-
 function toggleDepSub4(id){
     if (id==="about4"){
         eee_menu.forEach(element => {
@@ -448,15 +597,6 @@ function toggleDepSub4(id){
 
 //IT sub menu selection starts
 
-let abt_dep5 = document.getElementById('about-dep5');
-let labs5 = document.getElementById('laboratories5');
-
-let abt_dep_sub5 = document.getElementById('about5');
-let labs_sub5 = document.getElementById('labs5');
-
-let it_menu = [abt_dep5,labs5]
-let it_submenu = [abt_dep_sub5,labs_sub5]
-
 function toggleDepSub5(id){
     if (id==="about5"){
         it_menu.forEach(element => {
@@ -486,20 +626,6 @@ function toggleDepSub5(id){
 //IT sub menu ends
 
 //MECH sub menu selection stats
-
-let abt_dep6 = document.getElementById('about-dep6');
-let vsn_msn6 = document.getElementById('vision-mission6');
-let labs6 = document.getElementById('laboratories6');
-let club6 = document.getElementById('clubs6');
-
-let abt_dep_sub6 = document.getElementById('about6');
-let vsn_msn_sub6 = document.getElementById('vsnmsn6');
-let labs_sub6 = document.getElementById('labs6');
-let club_sub6 = document.getElementById('club6');
-
-let mech_menu = [abt_dep6,vsn_msn6,labs6,club6]
-let mech_submenu = [abt_dep_sub6,vsn_msn_sub6,labs_sub6,club_sub6]
-
 
 function toggleDepSub6(id){
     if (id==="about6"){
@@ -554,16 +680,6 @@ function toggleDepSub6(id){
 //MECH sub menu ends
 
 //DMS sub menu selection
-
-let abt_dep7 = document.getElementById('about-dep7');
-let club7 = document.getElementById('clubs7');
-
-let abt_dep_sub7 = document.getElementById('about7');
-let club_sub7 = document.getElementById('club7');
-
-let dms_menu = [abt_dep7,club7]
-let dms_submenu = [abt_dep_sub7,club_sub7]
-
 
 function toggleDepSub7(id){
     if (id==="about7"){
