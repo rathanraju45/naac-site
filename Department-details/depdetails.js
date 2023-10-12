@@ -237,7 +237,7 @@ function toggleMain(id){
         });
         branch_sub_list[2].classList.add('dep-isactive')
 
-        document.title = 'Civil Enginerring'
+        document.title = 'Civil engineering'
 
         url.searchParams.set("branch","civil-engineering")
     }

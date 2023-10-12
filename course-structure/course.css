@@ -309,7 +309,7 @@ footer{
     border-radius: 5px;
 }
 
-.mic20{
+.regulation{
     display: flex;
     width: 70%;
     margin-top: 3%;
@@ -503,5 +503,24 @@ footer{
     line-height: 3vh;
     font-size: 4vw;
     width: 300%;
+   }
+
+   #Description h2{
+    font-size: 140%;
+   }
+   #Description h3{
+    font-size: 4vw;
+   }
+   .regulation{
+    width: 100%;
+    flex-direction: column;
+   }
+   .ug,.pg{
+    width: 100%;
+    margin: 2%;
+   }
+   .ug p,.pg p{
+    font-size: 4vw;
+    line-height: 5vh;
    }
 }
