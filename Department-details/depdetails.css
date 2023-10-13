@@ -436,7 +436,7 @@ footer{
 #about2,#vsnmsn2,#labs2,#club2,
 #about3,#vsnmsn3,#labs3,#club3,
 #about4,#vsnmsn4,#labs4,#club4,
-#about5,#labs5,
+#about5,#vsnmsn5,#labs5,
 #about6,#vsnmsn6,#labs6,#club6,
 #about7,#club7,
 #BED,#CSE,#ECE,#EEE,#DMS,#DCA,#MECH,#IT,#CIVIL{
@@ -463,7 +463,7 @@ footer{
     display: none;
 }
 
-#about-dep5,#laboratories5{
+#about-dep5,#vision-mission5,#laboratories5{
     display: none;
 }
 

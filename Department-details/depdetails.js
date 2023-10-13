@@ -82,13 +82,15 @@ let eee_menu = [abt_dep4,vsn_msn4,labs4,club4]
 let eee_submenu = [abt_dep_sub4,vsn_msn_sub4,labs_sub4,club_sub4]
 
 let abt_dep5 = document.getElementById('about-dep5');
+let vsn_msn5 = document.getElementById('vision-mission5');
 let labs5 = document.getElementById('laboratories5');
 
 let abt_dep_sub5 = document.getElementById('about5');
+let vsn_msn_sub5 = document.getElementById('vsnmsn5')
 let labs_sub5 = document.getElementById('labs5');
 
-let it_menu = [abt_dep5,labs5]
-let it_submenu = [abt_dep_sub5,labs_sub5]
+let it_menu = [abt_dep5,vsn_msn5,labs5]
+let it_submenu = [abt_dep_sub5,vsn_msn_sub5,labs_sub5]
 
 let abt_dep6 = document.getElementById('about-dep6');
 let vsn_msn6 = document.getElementById('vision-mission6');
@@ -610,7 +612,7 @@ function toggleDepSub5(id){
         it_submenu[0].classList.add('dep-active');
     }
 
-    else {
+    else if (id=='vsnmsn5'){
         it_menu.forEach(element => {
             element.classList.remove('active-sub');
         });
@@ -620,6 +622,18 @@ function toggleDepSub5(id){
             element.classList.remove('dep-active');
         });
         it_submenu[1].classList.add('dep-active');
+    }
+
+    else {
+        it_menu.forEach(element => {
+            element.classList.remove('active-sub');
+        });
+        it_menu[2].classList.add('active-sub');
+
+        it_submenu.forEach(element => {
+            element.classList.remove('dep-active');
+        });
+        it_submenu[2].classList.add('dep-active');
     }
 }
 
