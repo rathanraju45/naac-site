@@ -549,6 +549,9 @@ select{
    .criteria-list p{
     font-size: 3.5vw !important;
    }
+   #criteria-select{
+    display: block;
+   }
    footer{
     width: 100vw;
    }
