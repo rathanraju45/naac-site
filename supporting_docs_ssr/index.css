@@ -349,6 +349,13 @@ footer {
     margin: 3%;
 }
 
+#composition h3 {
+    color: #071b8b;
+    font-size: 1.7vw;
+    width: 95%;
+    line-height: 10vh;
+}
+
 #composition ul {
     width: 95%;
     align-items: left;
