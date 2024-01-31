@@ -400,9 +400,17 @@ td{
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
-    /* Add a light grey background to even rows */
 }
-/* media queris for responsive design */
+
+.ssr-table-heading{
+    font-weight: bold;
+    text-align: center;
+    color: #071b8b;
+}
+
+#criteria6 td{
+    text-align: center;
+}
 
 
 @media screen and (max-width: 600px) {
