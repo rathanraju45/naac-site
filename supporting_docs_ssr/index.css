@@ -425,6 +425,10 @@ li{
     color: #cf2c31;
 }
 
+#branch132 tr th,#branch132 tr td{
+    text-align: center;
+}
+
 
 @media screen and (max-width: 600px) {
     #col-desc {
