@@ -412,12 +412,16 @@ tr:nth-child(even) {
     text-align: center;
 }
 
-#new-courses{
+#new-courses,#parts{
     width: max-content;
     margin-left: 5%;
 }
 
 #new-course li a{
+    color: #cf2c31;
+}
+
+li{
     color: #cf2c31;
 }
 
