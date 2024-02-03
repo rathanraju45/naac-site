@@ -412,7 +412,7 @@ tr:nth-child(even) {
     text-align: center;
 }
 
-#new-courses,#parts{
+#new-courses,#parts,.parts{
     width: max-content;
     margin-left: 5%;
 }
