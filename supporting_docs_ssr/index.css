@@ -429,6 +429,10 @@ li{
     text-align: center;
 }
 
+.redhead{
+    color: #cf2c31 !important;
+}
+
 
 @media screen and (max-width: 600px) {
     #col-desc {
