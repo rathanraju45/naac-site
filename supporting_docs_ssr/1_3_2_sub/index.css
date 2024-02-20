@@ -1,0 +1,47 @@
+.branch-section{
+    width: 95%;
+    height: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.branch{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #071b8b;
+    color: white;
+    cursor: pointer;
+}
+
+.selected-branch{
+    background-color: #cf2c31;
+}
+
+.branch-content{
+    width: 95%;
+}
+
+#composition li{
+    color: black;
+    cursor: pointer;
+}
+
+#composition li ul{
+    margin-left: 5%;
+}
+
+#composition li ul li a:hover{
+    color: #071b8b !important;
+}
+
+h3,.branch-content{
+    display: none;
+}
+
+.activeH3,.activeBranchDiv{
+    display: block;
+}
